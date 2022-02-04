@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: path.resolve(__dirname, "/src/main")
+        main: path.resolve(__dirname, "/src/main"),
+        vendor: path.resolve(__dirname, "/src/vendor") // put third party apps here
     },
     output: {
         filename: 'main.[contenthash].js',
