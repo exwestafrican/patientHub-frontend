@@ -1,0 +1,19 @@
+{
+  "name": "patienthub-frontend",
+  "version": "1.0.0",
+  "description": "front end implimentation of patient hub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exwestafrican/patientHub-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exwestafrican/patientHub-frontend/issues"
+  },
+  "homepage": "https://github.com/exwestafrican/patientHub-frontend#readme"
+}
