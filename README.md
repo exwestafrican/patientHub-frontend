@@ -1,4 +1,4 @@
-# patientHub-frontend
+# Patient Hub-frontend
 Frontend implementation of a patient management system
 
 ## Prequisite 
