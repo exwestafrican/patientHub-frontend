@@ -1,0 +1,57 @@
+.heading {
+    text-align    : center;
+    padding-bottom: 2rem;
+    text-shadow   : var(--text-shadow);
+    text-transform: uppercase;
+    color         : var(--black);
+    font-size     : 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span {
+    color: var(--green);
+}
+
+
+.header {
+    padding        : 2rem 9%;
+    text-transform : uppercase;
+    box-shadow     : 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    background     : #fff;
+    font-weight    : bold;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color    : var(--black);
+}
+
+.header .logo i {
+    color: var(--green);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+
+    color      : var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+.cta {
+
+    button {
+        padding         : 15px 25px;
+        background-color: #16a085;
+        font-weight     : 600;
+        border          : none;
+        border-radius   : 50px;
+        cursor          : pointer;
+    }
+}
