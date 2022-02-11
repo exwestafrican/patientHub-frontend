@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regstyles.css" type="text/css">
+    <script src="">
+        fetch('').then(function(response){
+            return response.json();
+        }).then(function(obj) {
+            console.log(obj);
+        }).catch(function(error) {
+            console.error('Something went wrong when loading script!');
+            console.error(error);
+        });
+    </script>
+</head>
+    <body>
+        <div class="main">
+            <div class="register">
+                <h2>Register Your Hospital Here</h2>
+                <form id="register" method="post">
+                   
+                    <label>Name of Hospital: </label><br>
+                    <input  name="hname"
+                    id="name" name="contactnum" type="text" placeholder="Enter name of Hospital">
+              <br><br>
+                     
+                        <label for="contactnum" class="number" > Contact Number</label><br>
+                        <input id="contactnum" name="contactnum" required="required" type="email" placeholder="+353 "/> 
+                    <br><br> 
+                        <label for="country" class="country" > Country</label><br>
+                        <input id="country" name="country" required="required" type="text" placeholder="Ireland"/> 
+                    <br><br>
+                        <label for="county" class="county" > County</label><br>
+                        <input  id="county" name="county" required="required" type="text" placeholder="Westmeath"/> 
+                    <br><br> 
+                        <label for="city" class="city" > City</label><br>
+                        <input  id="city" name="city" required="required" type="text" placeholder="Athlone"/> 
+                    <br><br> 
+                        <label for="addressline" class="addline" data-icon="d" > Address Line</label><br>
+                        <input id="addressline" name="addressline" required="required" type="text" placeholder="Main Street"/> 
+                    <br><br>
+                        <label for="eircode" class="eircode" > Eircode</label><br>
+                        <input  id="eircode" name="eircode" required="required" type="text" placeholder="HXX XXXX"/> 
+                    <br><br>
+                        <label for="hq" class="hq" >Is this hospital the HQ?</label><br>
+                        &nbsp;&nbsp;&nbsp;
+                        
+                        <input type="radio" name="hq" id="yes">
+                        &nbsp;
+                        <span id="yes">Yes</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="hq" id="no">
+                        &nbsp;
+                        <span id="no">No</span>
+                        <br><br> 
+                        <label for="emailsignup" class="youmail" > Email</label><br>
+                        <input  id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                    <br><br>
+                        <label for="passwordsignup" class="youpasswd">Your password </label><br>
+                        <input  id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    <br><br>
+                        <label for="passwordsignup_confirm" class="youpasswd">Please confirm your password </label><br>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    <br><br>
+                     
+                        <input id="submit" type="submit" value="Sign up"/> 
+                    
+                    <br><br>
+                    <p class="change_link">  
+                        Already a member ?
+                        <a href="" class="to_login"> Go and log in </a>
+
+                </form>
+            </div><!--end register-->
+        </div><!--end main-->
+    </body>
+</html>
