@@ -2,7 +2,7 @@ import "./style.scss";
 import { render } from "react-dom";
 import NavBar from "./app/component/NavBar";
 import PromotionCards from "./app/component/PromotionCards";
-
+import HospitalRegForm from "./app/component/HospitalRegForm";
 
 
 
@@ -10,10 +10,11 @@ import PromotionCards from "./app/component/PromotionCards";
 
 render(<>
     <NavBar />
-    <section class="providers" id="providers">
+    <HospitalRegForm/>
+    <section className="providers" id="providers">
         <PromotionCards />
     </section>
-
+    
 
 
 
