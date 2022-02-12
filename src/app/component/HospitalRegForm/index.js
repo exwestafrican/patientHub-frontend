@@ -1,6 +1,8 @@
-import "./styles.scss";
-import InputField from "../InputField"
+// import "./styles.scss";
+import "./style.scss";
+import InputField from "../InputField";
 import Checkbox from "../Checkbox";
+
 export default function HospitalRegForm() {
     console.log("name");
   return(<form id="register" method="post" className="hospitalForm">
