@@ -1,20 +1,19 @@
-.hospitalForm{
-width: 50%;
-margin: 0 auto;
-background-color: rgba(0, 0, 0, 0.3);
-font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255 255, 0.3);
-    box-shadow: 2px 2px 15px 
-    rgba(0,0,0,0.3);
-    color:#fff;
+.hospitalForm {
+    width              : 50%;
+    margin             : 0 auto;
+    // background-color: rgba(0, 0, 0, 0.3);
+    font-size          : 18px;
+    border-radius      : 10px;
+    border             : 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow         : 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color              : #fff;
 }
 
 // labelName{
 //     font-family:sans-serif;
 //     font-size: 18px;
 //     font-style: italic;
-    
+
 // }
 // input#name{
 //     width:300px;
@@ -25,4 +24,4 @@ font-size: 18px;
 //     background-color: #fff;
 //     box-shadow: inset 1px 1px 5px
 //     rgba(0,0,0,0.3);
-}
+//}
