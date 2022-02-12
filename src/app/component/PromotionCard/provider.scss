@@ -1,55 +1,53 @@
-// .providers .box-container {
-//     display              : grid;
-//     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-//     gap                  : 2rem;
-// }
+.promobox {
+    width        : 28rem;
+    min-height   : 16rem;
+    padding      : 1rem 2rem 1.8rem 2rem;
+    line-height  : 2rem;
+    margin-left  : auto;
+    margin-right : auto;
+    text-align   : left;
+    border-radius: 10px;
 
-// .providers .box-container .box {
-//     background   : #fff;
-//     border-radius: .5rem;
-//     box-shadow   : var(--box-shadow);
-//     border       : var(--border);
-//     padding      : 2.5rem;
-// }
-
-// .providers .box-container .box i {
-//     color         : var(--green);
-//     font-size     : 5rem;
-//     padding-bottom: .5rem;
-// }
-
-// .providers .box-container .box h3 {
-//     color    : var(--black);
-//     font-size: 2.5rem;
-//     padding  : 1rem 0;
-// }
-
-// .providers .box-container .box p {
-//     color      : var(--light-color);
-//     font-size  : 1.4rem;
-//     line-height: 2;
-// }
-
-.box {
-    width         : 28rem;
-    min-height    : 16rem;
-    padding       : 3rem;
-    line-height   : 2rem;
-    text-transform: capitalize;
-    margin-left   : auto;
-    margin-right  : auto;
 }
 
-.box>* {
-    margin-bottom: 1.8rem;
+
+.promobox {
+
+    // for p's and a buttons change font weight
+    p,
+    a button {
+        font-weight: 400;
+
+    }
+
+    h2 {
+        font-weight   : 700;
+        font-size     : 1.4rem;
+        text-transform: capitalize;
+    }
+
+    >* {
+        margin-bottom: 1rem;
+
+    }
+
+    p {
+        padding-right: 4rem;
+    }
 
 
 }
 
-.btn {
-    border          : 1px red solid;
-    border-radius   : 4px;
-    background-color: transparent;
-    font-weight     : 500;
-    padding         : .5rem 2.5rem;
+.promobtn {
+    border           : 1px rgb(200 203 208 / 30%) solid;
+    border-radius    : 4px;
+    background-color : transparent;
+    font-weight      : 500;
+    padding          : .65rem 2.5rem;
+    background-color : rgb(200 203 208 / 30%);
+    background-repeat: no-repeat;
+    cursor           : pointer;
+    overflow         : hidden;
+    outline          : none;
+    text-transform   : capitalize;
 }

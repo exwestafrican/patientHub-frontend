@@ -6,11 +6,13 @@ import PromotionCards from "./app/component/PromotionCards";
 
 
 
+// Example POST method implementation:
+
 
 
 render(<>
     <NavBar />
-    <section class="providers" id="providers">
+    <section className="providers" id="providers">
         <PromotionCards />
     </section>
 
