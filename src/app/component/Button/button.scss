@@ -1,0 +1,20 @@
+.custombtn {
+    border-radius    : 4px;
+    font-weight      : 400;
+    font-size        : 1.1rem;
+    padding          : .65rem 2.5rem;
+    background-repeat: no-repeat;
+    cursor           : pointer;
+    overflow         : hidden;
+    outline          : none;
+    text-transform   : capitalize;
+}
+
+.green-background {
+    background-color: #9FE2BF;
+}
+
+.transparent-background {
+    border          : 1px rgb(176, 178, 180) solid;
+    background-color: transparent;
+}

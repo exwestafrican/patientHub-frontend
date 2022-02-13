@@ -1,3 +1,4 @@
+import Button from "../Button";
 import "./hero.scss";
 
 export default function Hero() {
@@ -10,8 +11,8 @@ export default function Hero() {
                 <h1 className="display-5 fw-bold  mb-3 lineSpacing">Medical Care With The Click Of A Button.</h1>
                 <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    <Button text={"Subscribe"} background={"transparent"} />
+                    <Button text={"Hospital Login"} background={"green"} />
                 </div>
 
             </div>
