@@ -1,0 +1,19 @@
+.lineSpacing {
+    line-height   : 3.7rem;
+    text-transform: capitalize;
+
+}
+
+.flex-box {
+    display        : flex;
+    gap            : 3rem;
+    flex-direction : row-reverse;
+    align-items    : center;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    text-align     : left;
+}
+
+.content-spacing>* {
+    margin: 2rem 0;
+}
