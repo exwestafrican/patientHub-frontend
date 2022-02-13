@@ -20,8 +20,8 @@ export default function HospitalRegForm() {
         <InputField labelName={"Confirm Password:"} name={"confirm password"} placeholderExample={"****"} />
 
         <input id="submit" type="submit" value="Sign up" />
-        <p class="change_link"> Already a member ?</p>
-        <a href="" class="to_login"> Go and log in </a>
+        <p className="change_link"> Already a member ?</p>
+        <a href="" className="to_login"> Go and log in </a>
 
     </form>);
 }
