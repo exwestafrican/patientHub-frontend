@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Button";
 import "./hero.scss";
 
@@ -12,7 +13,10 @@ export default function Hero() {
                 <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                     <Button text={"Subscribe"} background={"transparent"} />
-                    <Button text={"Hospital Login"} background={"green"} />
+                    <Link to={"/hospitalreg"}>
+                        <Button text={"Hospital registration"} background={"green"} />
+                    </Link>
+
                 </div>
 
             </div>
