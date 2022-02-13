@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import "./provider.scss";
 
 
-export default function PromotionCard({ title, description, bannerColor }) {
+export default function PromotionCard({ title, description, bannerColor, path }) {
     return (
         <div className="promobox" style={{ backgroundColor: bannerColor }}>
             <h2>{title}</h2>
             <p>{description}</p>
-            <a href="#" >
+            <Link to={`/${path}`}>
                 <button className="promobtn">
                     learn more
                 </button>
-            </a>
-        </div>
+            </Link>
+        </div >
     )
 
 

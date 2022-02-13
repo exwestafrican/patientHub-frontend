@@ -1,5 +1,5 @@
 import "./style.scss";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { render } from "react-dom";
 import NavBar from "./app/component/NavBar";
 import Home from "./app/layout/Home";
@@ -15,7 +15,8 @@ function App() {
         <>
             <NavBar />
             <Routes>
-                <Route path="/dist/" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/hospitalreg" element={<HospitalRegistrationForm />} />
             </Routes>
         </>
     )

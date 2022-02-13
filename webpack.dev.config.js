@@ -13,12 +13,5 @@ module.exports = merge(base, {
         ]
     },
     devtool: false,
-    devServer: {
-        host: '0.0.0.0',
-        contentBase: "./dist",
-        hot: true
-    }
-
-
 
 });
