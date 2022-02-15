@@ -1,0 +1,46 @@
+.center {
+
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.login__item {
+    width: 34%;
+
+    input[type="password"] {
+
+        border-top-left-radius : 0;
+        border-top-right-radius: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+}
+
+
+
+
+.login__item input[type="email"] {
+
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius: 0;
+}
+
+.login__item button {
+    display: block;
+    width  : 100%;
+
+    margin-left : auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .login__item {
+        width: 70%;
+    }
+}

@@ -5,6 +5,7 @@ import NavBar from "./app/component/NavBar";
 import Home from "./app/layout/Home";
 import HospitalRegistrationForm from "./app/component/HospitalRegForm"
 import Footer from "./app/component/Footer";
+import Login from "./app/layout/Login";
 
 
 
@@ -20,6 +21,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/hospitalreg" element={<HospitalRegistrationForm />} />
+                    <Route exact path="/doctor-registration" element={<Login />} />
                 </Routes>
                 <Footer />
             </ div>
