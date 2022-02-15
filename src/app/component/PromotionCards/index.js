@@ -5,25 +5,26 @@ export default function PromotionCards() {
 
     class Promotion {
 
-        constructor(title, description, bannerColor, path) {
+        constructor(title, description, bannerColor, path, linkFor) {
             this.title = title;
             this.description = description;
             this.bannerColor = bannerColor
             this.path = path
+            this.linkFor = linkFor
 
         }
 
     }
     const promotions = [
 
-        new Promotion("Save patients data securly", " always happy to be here with you guys  with each project and track their metrics separetly their metrics separetly", "#E9E8F6", "hospitalreg"),
-        new Promotion("Find Hospitals Near you", " connect your various webhooks products with each project and track their metrics separetly", "#EEF1F6", "hospitalreg"),
-        new Promotion("New Age Hospital", "happy to be here with you guys Hospitals Near you connect your various webhooks products with each project", "#FCF5ED", "hospitalreg"),]
+        new Promotion("Focused on The Doctors", " scheduling an appoinment? setting prescription reminders? viewing a patients history. Everything essential to making a doctors life pleasant", "#E9E8F6", "doctor-login", "Login As Doctor"),
+        new Promotion("Be the future", "connect your various departments seemlesly with each other. We know managing a hospital can be a hassle", "#EEF1F6", "admin-login", "Login As Admin"),
+        new Promotion("Sync Across Multiple Hospitals", "Transfer critical patient data accross multiple hospitals with the click of a button, patient managment has never been so simple", "#FCF5ED", "hospitalreg", "Contact Us"),]
 
 
     return <div className="box-container">
         {
-            promotions.map((promotion, idx) => <PromotionCard key={idx} title={promotion.title} description={promotion.description} bannerColor={promotion.bannerColor} path={promotion.path} />)
+            promotions.map((promotion, idx) => <PromotionCard key={idx} title={promotion.title} description={promotion.description} bannerColor={promotion.bannerColor} path={promotion.path} linkFor={promotion.linkFor} />)
         }
 
     </div>
