@@ -2,6 +2,7 @@ import "./login.scss"
 
 import InputField from "../../component/InputField";
 import { useForm } from "react-hook-form";
+import Alert from "../../component/Alert";
 
 
 export default function Login() {
@@ -9,8 +10,11 @@ export default function Login() {
 
     return (
         <form className="full-height form-signin center ">
+
             <div class="login__item">
+
                 <h1 class="h3 mb-3 font-weight-normal">Register Here</h1>
+                <Alert message={"invalid username or password"} />
                 <input type="text" id="inputLastName" class="form-control form-control-lg mb-3" placeholder="Last Name" />
                 <input type="text" id="inputFirstName" class="form-control form-control-lg mb-3" placeholder="First Name" />
                 <input type="text" id="inputPps" class="form-control form-control-lg mb-3" placeholder="PPS" />
