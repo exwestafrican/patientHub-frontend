@@ -1,8 +1,18 @@
-export default function InputField({ name, labelName, placeholderExample }) {
+export default function InputField({ name, labelName, placeholderExample, register, validators }) {
+
+
+
     return (
-        <div className="mb-3">
+        // <div className="mb-3">
+        //     <label htmlFor={name} className="form-label">{labelName}</label>
+        //     <input {...register(name, { required: "This field is required" })} type="text" className="form-control" id={name} placeholder={placeholderExample} />
+        //     <div id="validationServer03Feedback" class="invalid-feedback">
+        //         {errors.meesage}
+        //     </div>
+        // </div>
+        <div className="mb-4">
             <label htmlFor={name} className="form-label">{labelName}</label>
-            <input type="text" className="form-control" id={name} placeholder={placeholderExample} />
+            <input type="text" {...register(name, validators)} className="form-control" id={name} aria-describedby={name} placeholder={placeholderExample} />
         </div>
     )
 }

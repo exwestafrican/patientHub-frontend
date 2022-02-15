@@ -19,6 +19,24 @@
     outline        : none;
     border         : none;
     text-decoration: none;
+
+}
+
+.custombtn {
+    border-radius    : 4px;
+    font-weight      : 400;
+    font-size        : 1.1rem;
+    padding          : .65rem 2.5rem;
+    background-repeat: no-repeat;
+    cursor           : pointer;
+    overflow         : hidden;
+    outline          : none;
+    text-transform   : capitalize;
+}
+
+body {
+    background-color: #FAF9FE;
+
 }
 
 // html {
