@@ -1,4 +1,4 @@
-
+import CustomResponse from "./Response"
 
 export default async function postData(url = '', data = {}) {
     // Default options are marked with *
@@ -15,7 +15,9 @@ export default async function postData(url = '', data = {}) {
         referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         body: JSON.stringify(data) // body data type must match "Content-Type" header
     });
-    return response.json(); // parses JSON response into native JavaScript objects
+
+    const jsonRes = await response.json()
+    return new CustomResponse(response.status, jsonRes)  // parses JSON response into native JavaScript objects
 }
 
 // postData("http://localhost:8080/v1/hospital", {
