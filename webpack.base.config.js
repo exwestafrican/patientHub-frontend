@@ -1,11 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+require("babel-core/register");
+require("babel-polyfill");
 
 module.exports = {
     entry: {
         main: path.resolve(__dirname, "src/main"),
         vendor: path.resolve(__dirname, "src/vendor") // put third party apps here
     },
+    entry: ["regenerator-runtime/runtime.js", path.resolve(__dirname, "src/main")],
     output: {
         filename: 'main.[contenthash].js',
         clean: true,
@@ -24,6 +27,8 @@ module.exports = {
             },
 
         ]
+
+
     },
     plugins: [new HtmlWebpackPlugin({
         template: "./src/index.html"
@@ -35,7 +40,7 @@ module.exports = {
             directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        port: 8080,
+        port: 9000,
         historyApiFallback: true,
     },
 
