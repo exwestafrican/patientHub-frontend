@@ -1,13 +1,14 @@
+import AdminRegForm from "../../component/AdminRegForm";
 import HospitalRegForm from "../../component/HospitalRegForm";
-import "./style.scss"
+import SideImage from "../../component/SideImage";
+
 
 export default function HospitalRegistration() {
     return (
-        <div className="flex-box ">
-            <div className="item">
 
-            </div>
+        <SideImage>
             <HospitalRegForm />
-        </div>
+        </SideImage>
+
     )
 }
