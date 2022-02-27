@@ -50,5 +50,10 @@ body {
 }
 
 .full-page {
-    min-height: 100vh;
+    height: 84vh;
+}
+
+
+.stack-items {
+    flex-direction: column;
 }

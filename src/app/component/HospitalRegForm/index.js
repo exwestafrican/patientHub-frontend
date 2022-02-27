@@ -10,6 +10,7 @@ import SideImage from "../SideImage";
 import Alert from "../Alert";
 
 import PageLoader from "../PageLoader";
+import cleanData from "../../../../cleandata";
 
 export default function HospitalRegForm() {
 
@@ -21,6 +22,7 @@ export default function HospitalRegForm() {
     const [errorMessage, setErrorMessage] = useState("");
 
     function onSubmit(data, e) {
+        data.eirCode = cleanData(data.eirCode)
         submitDataToBackend(data)
     }
 
@@ -30,11 +32,16 @@ export default function HospitalRegForm() {
 
         try {
             const cResp = await createHospital(data);
+            console.log(data)
+            const url = "/registrtion?eirCode=" + data.eirCode
+            console.log(url)
 
 
             if (cResp.ok()) {
                 reset();
-                navigate("/");
+
+
+                navigate(url);
             } else {
                 const msg = cResp.getErrorMessage()
                 //  wait a couple secs, then handle failure

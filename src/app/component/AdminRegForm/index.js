@@ -2,17 +2,23 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import EmailField from "../EmailField";
 import InputField from "../InputField";
+import { useQuery } from "../../Hooks/useQuery";
+
+
 
 export default function AdminRegForm() {
+    const query = useQuery();
     const [errorMessage, setErrorMessage] = useState("");
     const [buttonVaule, setbuttonVaule] = useState("Register Admin");
+
+    const eirCode = query.get("eirCode")
     const { register, handleSubmit, formState, reset, setFocus } = useForm();
 
     function onSubmit(data, e) {
         // submitDataToBackend(data)
     }
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="form-control-lg col-lg-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="form-control-lg col-12 col-lg-5">
             {errorMessage && <Alert message={errorMessage} />}
             <InputField labelName={"Last Name:"} name={"lastName"} placeholderExample={"Enter a Last Name"} register={register} validators={
                 {
@@ -65,7 +71,7 @@ export default function AdminRegForm() {
             <p>{formState.errors.pps?.message}</p>
 
 
-            <input id="submit" type="submit" value={buttonVaule} className="custombtn" />
+            <input id="submit" type="submit" value={buttonVaule} className="custombtn col-12 " />
         </form>
     )
 

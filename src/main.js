@@ -9,6 +9,7 @@ import Login from "./app/layout/Login";
 
 
 import HospitalRegistration from "./app/layout/HospitalRegistration";
+import AdminRegistration from "./app/layout/AdminRegistration";
 
 
 
@@ -24,7 +25,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/hospitalreg" element={<HospitalRegistration />} />
-
+                    <Route exact path="/registrtion" element={<AdminRegistration />} />
                     <Route exact path="/doctor-registration" element={<Login />} />
                 </Routes>
                 <Footer />
