@@ -10,7 +10,7 @@ import SideImage from "../SideImage";
 import Alert from "../Alert";
 
 import PageLoader from "../PageLoader";
-import cleanData from "../../../../cleandata";
+import cleanData from "../../utils/general";
 
 export default function HospitalRegForm() {
 
@@ -34,7 +34,7 @@ export default function HospitalRegForm() {
             const cResp = await createHospital(data);
             console.log(data)
             const url = "/registrtion?eirCode=" + data.eirCode
-            console.log(url)
+
 
 
             if (cResp.ok()) {
