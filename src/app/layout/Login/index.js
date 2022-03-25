@@ -11,9 +11,9 @@ export default function Login() {
     return (
         <form className="full-height form-signin center ">
 
-            <div class="login__item">
+            <div className="login__item">
 
-                <h1 class="h3 mb-3 font-weight-normal">Register Here</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Register Here</h1>
                 <Alert message={"invalid username or password"} />
                 <input type="text" id="inputLastName" class="form-control form-control-lg mb-3" placeholder="Last Name" />
                 <input type="text" id="inputFirstName" class="form-control form-control-lg mb-3" placeholder="First Name" />
@@ -21,7 +21,7 @@ export default function Login() {
                 <input type="text" id="inputContactNo" class="form-control form-control-lg mb-3" placeholder="Contact Number" />
                 <input type="email" id="inputEmail" class="form-control form-control-lg mb-3" placeholder="Email Address" />
                 <input type="password" id="inputPassword" class="form-control form-control-lg mb-3" placeholder="Password" />
-                <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">Register</button>
+                <button className="btn btn-lg btn-primary btn-block mt-4" type="submit">Register</button>
             </div>
 
         </form>

@@ -1,0 +1,14 @@
+.avatar {
+    width           : 9rem;
+    height          : 9rem;
+    background-color: black;
+    border-radius   : 50%;
+    cursor          : pointer;
+
+}
+
+.avatar img {
+    width        : inherit;
+    height       : inherit;
+    border-radius: inherit;
+}
