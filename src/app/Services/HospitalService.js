@@ -10,12 +10,12 @@ export async function createHospital(hospitalData) {
 }
 
 
-export function getErrorMessage(response) {
-    let jsonResponse = response.json()
-    console.log(jsonResponse)
-    let msg = jsonResponse.get("message")
-    return msg
+// export function getErrorMessage(response) {
+//     let jsonResponse = response.json()
+//     console.log(jsonResponse)
+//     let msg = jsonResponse.get("message")
+//     return msg
 
-}
+// }
 
 

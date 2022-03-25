@@ -49,10 +49,11 @@ body {
     background-color: #9FE2BF;
 }
 
+.full-page {
+    height: 84vh;
+}
 
-// html {
 
-//     // overflow-x        : hidden;
-//     // scroll-padding-top: 7rem;
-//     // scroll-behavior   : smooth;
-// }
+.stack-items {
+    flex-direction: column;
+}
