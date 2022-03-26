@@ -1,10 +1,18 @@
 
+import Footer from "../../component/Footer";
 import HospitalRegForm from "../../component/HospitalRegForm";
+import NavBar from "../../component/NavBar";
 
 
 
 export default function HospitalRegistration() {
     return (
-        <HospitalRegForm />
+        <>
+            <NavBar />
+            <div className="container">
+                <HospitalRegForm />
+            </div>
+            <Footer />
+        </>
     )
 }
