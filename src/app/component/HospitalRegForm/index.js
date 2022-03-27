@@ -3,7 +3,7 @@ import "./style.scss";
 import InputField from "../InputField";
 import Checkbox from "../Checkbox";
 import { useForm } from "react-hook-form";
-import { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { createHospital, getErrorMessage } from "../../Services/HospitalService";
 import SideImage from "../SideImage";
@@ -154,7 +154,7 @@ export default function HospitalRegForm() {
             {loading ? <PageLoader /> : <SideImage>< RegForm ></RegForm ></SideImage>}
         </>
 
-        // <PageLoader />
+
 
     );
 

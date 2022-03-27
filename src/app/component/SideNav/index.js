@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 function SideNavOptions({ navItems }) {
@@ -34,7 +35,10 @@ export default function SideNav() {
         <section id="menu">
             <div className="logo">
                 <img src="" alt="" />
-                <h2>Patient Hub</h2>
+                <Link to="/">
+                    <h2>Patient Hub</h2>
+                </Link>
+
             </div>
             <SideNavOptions navItems={[
                 {

@@ -1,9 +1,11 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DataTable from 'react-data-table-component';
 import CreateDoctorModal from '../../component/CreateDoctorModal';
 import DashboardAvatar from "../../component/DashboardAvatar";
 import SideNav from "../../component/SideNav";
+import { User } from '../../model/user';
+import { hospitalAdminService } from '../../Services/HospitalAdminService';
 import "./style.scss";
 
 
@@ -11,23 +13,35 @@ import "./style.scss";
 
 
 export default function DashboardHome() {
-    const data = [
-        {
-            staffID: 1,
-            firstName: 'Beetlejuice',
-            lastName: "Bloom",
-            email: "bloom@gmail.com",
-            specialization: 'Sugery',
-        },
-        {
-            staffID: 2,
-            firstName: 'Ghostbusters',
-            lastName: "Bloom",
-            email: "ghost@gmail.com",
-            specialization: 'Pediatician',
-        },
-    ]
-    const [doctorsList, setDoctorsList] = useState(data);
+    // useEffect, fetch all 
+
+    const [doctorsList, setDoctorsList] = useState([]);
+
+    function doctorItem(doctor) {
+        return {
+            staffID: doctor.staffID,
+            firstName: doctor.firstName,
+            lastName: doctor.lastName,
+            email: doctor.email,
+            specialization: doctor.specialization,
+        }
+    }
+
+    useEffect(
+        () => {
+            async function fetchDoctors() {
+                const tempdoctors = []
+                const cResp = await hospitalAdminService.fetchDoctors(User.authToken())
+                const fetchedDoctorslists = cResp.getSuccessData();
+                for (const doctor of fetchedDoctorslists) {
+                    tempdoctors.push(doctorItem(doctor))
+                }
+                setDoctorsList(tempdoctors)
+            }
+            fetchDoctors()
+        }, []
+    )
+
 
     const columns = [
         {
