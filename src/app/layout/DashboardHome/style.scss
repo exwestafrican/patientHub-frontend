@@ -39,11 +39,21 @@
 }
 
 
-.i-name {
-    color      : #444a53;
-    padding    : 30px 30px 0 30px;
-    font-size  : 24px;
-    font-weight: 700;
-    margin-top : 70px;
+.postionInBoard {
+    padding: 30px 30px 0 30px;
+}
 
+.i-name {
+    color         : #444a53;
+    // padding    : 30px 30px 0 30px;
+    font-size     : 24px;
+    font-weight   : 700;
+    margin-top    : 70px;
+
+}
+
+.split {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
 }

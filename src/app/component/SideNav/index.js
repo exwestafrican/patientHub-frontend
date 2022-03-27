@@ -17,7 +17,8 @@ function SideNavOptions({ navItems }) {
 
             {
                 navItems.map(
-                    item => <SideNavListItem
+                    (item, idx) => <SideNavListItem
+                        key={idx}
                         name={item.name}
                         redirectTo={item.redirectTo} />
                 )
