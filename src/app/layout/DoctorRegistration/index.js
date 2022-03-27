@@ -7,7 +7,7 @@ import NavBar from "../../component/NavBar";
 import Footer from "../../component/Footer";
 
 
-export default function Login() {
+export default function DoctorRegistration() {
     const { register, handleSubmit, formState, reset } = useForm();
 
     return (
