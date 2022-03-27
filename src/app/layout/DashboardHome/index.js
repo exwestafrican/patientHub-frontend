@@ -93,8 +93,9 @@ export default function DashboardHome() {
         )
     }
     function updateDoctorsListHandler(newDoctor) {
-        console.log("here");
-        console.log(newDoctor);
+        const lastIdx = doctorsList.length - 1
+        const lastDoctor = doctorsList[lastIdx]
+        newDoctor.staffID = lastDoctor.staffID + 1
         setDoctorsList([...doctorsList, newDoctor])
     }
 
