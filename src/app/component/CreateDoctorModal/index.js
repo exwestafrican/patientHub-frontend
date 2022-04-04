@@ -17,7 +17,8 @@ export default function CreateDoctorModal({ updateDoctorsList }) {
         // clear data 
         // close modal
 
-        updateDoctorsList(data)
+        updateDoctorsList(data);
+        reset();
 
 
     }
