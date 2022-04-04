@@ -1,0 +1,59 @@
+.dashboard {
+    width        : 100%;
+    // background: #e5e7eb;
+    background   : var(--page-background);
+    position     : relative;
+    display      : flex;
+}
+
+.interface {
+    width      : calc(100% - 300px);
+    margin-left: 300px;
+    position   : relative;
+}
+
+.navigation {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    background     : #fff;
+    padding        : 15px 30px;
+    border-bottom  : 3px solid #594ef7;
+    position       : fixed;
+    width          : calc(100% - 300px);
+    gap            : 40%;
+}
+
+
+.interface .navigation .profile {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+}
+
+.interface .navigation .profile i {
+    margin-right: 20px;
+    font-size   : 19px;
+    font-weight : 400;
+    cursor      : pointer;
+}
+
+
+.postionInBoard {
+    padding: 30px 30px 0 30px;
+}
+
+.i-name {
+    color         : #444a53;
+    // padding    : 30px 30px 0 30px;
+    font-size     : 24px;
+    font-weight   : 700;
+    margin-top    : 70px;
+
+}
+
+.split {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
